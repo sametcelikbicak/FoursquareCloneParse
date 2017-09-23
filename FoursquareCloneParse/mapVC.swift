@@ -69,7 +69,7 @@ class mapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         object["latitude"] = self.chosenLatitude
         object["longitude"] = self.chosenLongitude
         if let imageData = UIImageJPEGRepresentation(globalImage, 0.5) {
-             object["image"] = PFFile(name: "image.jpg", data: imageData)
+            object["image"] = PFFile(name: "image.jpg", data: imageData)
         }
         object.saveInBackground { (success, error) in
             if error != nil {

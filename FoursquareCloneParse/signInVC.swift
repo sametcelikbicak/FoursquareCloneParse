@@ -15,12 +15,8 @@ class signInVC: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         
     }
